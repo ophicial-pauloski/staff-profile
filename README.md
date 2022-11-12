@@ -1,2 +1,1 @@
-# next-airbnb
 # staff-profile
