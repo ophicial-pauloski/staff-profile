@@ -14,6 +14,14 @@ app.use(cors());
 app.use(errorMiddleWare);
 app.use("/api/staff", staffRoute);
 
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to staff profile'
+  })
+})
+
 app.listen(port, () => {
   databaseConnection();
   console.log("Server running on: " + port);
